@@ -1,6 +1,6 @@
-# 
+# Capstone en Science des Données Appliquées
 [![langen](https://img.shields.io/badge/lang-en-red)]( <README.md> )  
-Ce dépôt contient tous les exeercices du cours [Capstone en Science des données Appliquées]( https://www.coursera.org/learn/applied-data-science-capstone/home/info ) dispensé [Yan Luo]( https://www.coursera.org/instructor/yanluo ) et [Joseph Santarcangelo]( https://www.coursera.org/instructor/~28511493 ) sur [Coursera]( https://www.coursera.org/instructor/~28511493 ) dans le cadre de la formation [Science des données IBM Certificat Professionnel]( https://www.coursera.org/professional-certificates/ibm-data-science ).
+Ce dépôt contient tous les exeercices du cours [Capstone en Science des Données Appliquées]( https://www.coursera.org/learn/applied-data-science-capstone/home/info ) dispensé [Yan Luo]( https://www.coursera.org/instructor/yanluo ) et [Joseph Santarcangelo]( https://www.coursera.org/instructor/~28511493 ) sur [Coursera]( https://www.coursera.org/instructor/~28511493 ) dans le cadre de la formation [Science des données IBM Certificat Professionnel]( https://www.coursera.org/professional-certificates/ibm-data-science ).
 
 Il est composé de 9 parties constituant tout le cours:
 - 7 jupyter notebooks
