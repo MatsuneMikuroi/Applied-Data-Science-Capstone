@@ -1,33 +1,18 @@
-# Titre
+# 
 [![langen](https://img.shields.io/badge/lang-en-red)]( <README.md> )  
-Cet exercice intitulé [*nom exercice*]( <lien exercice> ) est tiré du cours [*nom cours*]( <lien cours> ) donnée par [*nom enseignant*]( <lien enseignant> ) dans le cadre de la formation [*nom formation*]( <lien formation> ) sur [*nom organisation*]( <lien organisation> )
+Ce dépôt contient tous les exeercices du cours [Capstone en Science des données Appliquées]( https://www.coursera.org/learn/applied-data-science-capstone/home/info ) dispensé [Yan Luo]( https://www.coursera.org/instructor/yanluo ) et [Joseph Santarcangelo]( https://www.coursera.org/instructor/~28511493 ) sur [Coursera]( https://www.coursera.org/instructor/~28511493 ) dans le cadre de la formation [Science des données IBM Certificat Professionnel]( https://www.coursera.org/professional-certificates/ibm-data-science ).
 
-[![consignes](https://img.shields.io/badge/Consignes-purple)]( <lien consigne> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-1-green)]( <semaine 1> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-2-green)]( <semaine 2> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-3-green)]( <semaine 3> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-4-green)]( <semaine 4> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-5-green)]( <semaine 5> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-6-green)]( <semaine 6> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-7-green)]( <semaine 7> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-8-green)]( <semaine 8> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-9-green)]( <semaine 9> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-10-green)]( <semaine 10> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-11-green)]( <semaine 11> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-12-green)]( <semaine 12> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-13-green)]( <semaine 13> )
-
-[![Static Badge](https://img.shields.io/badge/Semaine-14-green)]( <semaine 14> )
+Il est composé de 9 parties constituant tout le cours:
+- 7 jupyter notebooks
+- 1 python web app faite avec Dash
+- 1 présentation pdf des résultats
+  
+[![Static Badge](https://img.shields.io/badge/1-Data%20Collection%20API-yellow)]( 1DataCollectionAPI.ipynb )
+[![Static Badge](https://img.shields.io/badge/2-Web%20Scrapping-yellow)]( 2webscrapping.ipynb )
+[![Static Badge](https://img.shields.io/badge/3-Data%20Wrangling-yellow)]( 3Datawrangling.ipynb )
+[![Static Badge](https://img.shields.io/badge/4-EDA%20with%20SQL-yellow)]( 4EDAwithSQL.ipynb )
+[![Static Badge](https://img.shields.io/badge/5-EDA%20with%20Visualization-yellow)]( 5EDAvisualization.ipynb )
+[![Static Badge](https://img.shields.io/badge/6-Launch%20Site%20Location-yellow)]( 6Launchsitelocation.ipynb )
+[![Static Badge](https://img.shields.io/badge/7-Interactive%20Dashboard-pink)]( 7 )
+[![Static Badge](https://img.shields.io/badge/8-Machine%20Learning%20Prediction-yellow)]( 8MachineLearningPrediction.ipynb )
+[![Static Badge](https://img.shields.io/badge/9-Presentation-cyan)]( SpaceX_Presentation.pdf )
