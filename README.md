@@ -4,9 +4,9 @@ This repository contain all the exercises of the course [Applied Data Science Ca
 
 
 It is composed of 9 parts constituing the whole course:
-- 7 jupyter notebook
+- 7 jupyter notebooks
 - 1 python web app made with Dash
-- 1 Presentation of the results
+- 1 presentation of the results
   
 [![Static Badge](https://img.shields.io/badge/1-Data%20Collection%20API-yellow)]( 1DataCollectionAPI.ipynb )
 [![Static Badge](https://img.shields.io/badge/2-Web%20Scrapping-yellow)]( 2webscrapping.ipynb )
