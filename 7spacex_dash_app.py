@@ -1,6 +1,6 @@
 # Import required libraries
 import pandas as pd
-import dash
+from dash import Dash, html, dcc, callback, Output, Input, dash_table
 import dash_html_components as html
 import dash_core_components as dcc
 from dash.dependencies import Input, Output
@@ -12,7 +12,7 @@ max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
 
 # Create a dash application
-app = dash.Dash(__name__)
+app = Dash(__name__)
 
 # Create an app layout
 app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
@@ -21,7 +21,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                 # TASK 1: Add a dropdown list to enable Launch Site selection
                                 # The default select value is for ALL sites
                                 # dcc.Dropdown(id='site-dropdown',...)
-                                dcc.Dropdown(id='id',
+                                dcc.Dropdown(id='site-dropdown',
                                             options=[
                                                 {'label': 'All Sites', 'value': 'ALL'},
                                                 {'label': 'CCAFS LC-40', 'value': 'CCAFS LC-40'},
@@ -46,9 +46,12 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                 dcc.RangeSlider(id='payload-slider',
                                     min=0, max=10000, step=1000,
                                     marks={0: '0',
-                                           5000: '5000',
-                                           10000: '10000'},
-                                    value=[min_value, max_value]),
+                                           2000: '2k',
+                                           4000: '4k',
+                                           6000: '6k',
+                                           8000: '8k',
+                                           10000: '10k'},
+                                    value=[0, 10000]),
 
                                 # TASK 4: Add a scatter chart to show the correlation between payload and launch success
                                 html.Div(dcc.Graph(id='success-payload-scatter-chart')),
@@ -64,19 +67,36 @@ def get_pie_chart(entered_site):
     filtered_df = spacex_df
     if entered_site == 'ALL':
         fig = px.pie(filtered_df, values='class', 
-        names='Launch Site', 
+        names='Launch Site',
         title='All Sites Launches')
         return fig
     else:
         # return the outcomes piechart for a selected site
-        fig = px.pie(filtered_df, values='class', 
-        names='Launch Site', 
-        title= entered_site + 'Success and Failures')
+        fig = px.pie(filtered_df.filter('Launch Site'), values='class', 
+        names='1', 
+        title= entered_site + ' Success and Failures')
         return fig
+        
 
 # TASK 4:
 # Add a callback function for `site-dropdown` and `payload-slider` as inputs, `success-payload-scatter-chart` as output
+@app.callback(Output('success-payload-scatter-chart', 'figure'),
+              [Input('site-dropdown', 'value'), 
+            #    Input('payload-slider', 'value')
+              ]
+             )
+def get_scatter_plot(enter_site):
+    filtered_df = spacex_df
+    if enter_site == 'ALL':
+        fig = px.scatter(filtered_df, 
+                         'Payload Mass (kg)', 
+                         'class',
+                         "Booster Version Category"
 
+                        )
+        return fig
+    else:
+        pass
 
 # Run the app
 if __name__ == '__main__':
